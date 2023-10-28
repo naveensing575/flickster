@@ -1,8 +1,8 @@
 import React from 'react';
-import Carousel from 'react-material-ui-carousel';
+import VidCarousel from 'react-material-ui-carousel';
 import CarouselItem from './CarouselItem';
 
-const MyCarousel = () => {
+const Carousel = () => {
     const items = [
         {
             video: 'video1.mp4',
@@ -15,15 +15,15 @@ const MyCarousel = () => {
     ];
 
     return (
-        <Carousel>
+        <VidCarousel>
             {items.map((item, index) => (
                 <CarouselItem key={index}>
                     <video src={item.video} controls autoPlay loop />
                     <p>{item.description}</p>
                 </CarouselItem>
             ))}
-        </Carousel>
+        </VidCarousel>
     );
 };
 
-export default MyCarousel;
+export default Carousel;

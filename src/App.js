@@ -1,5 +1,12 @@
+import Home from './pages/Home';
+
 function App() {
-    return <div className="App"></div>;
+    return (
+        <div className="App">
+            <h1>Flickster</h1>
+            <Home />
+        </div>
+    );
 }
 
 export default App;
